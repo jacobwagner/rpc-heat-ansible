@@ -280,7 +280,7 @@ resources:
                     elif [[ "$@" == "kilo" ]]; then
                         export RPC_SERIES="11.1"
                     elif [[ "$@" == "master" ]]; then
-                        export RPC_SERIES="11.1"
+                        export RPC_SERIES="12.0"
                     else
                         export RPC_SERIES=`echo $@ | sed 's/^r//g' | awk -F '[\.]' '{ print $1 "." $2 }'`
                     fi

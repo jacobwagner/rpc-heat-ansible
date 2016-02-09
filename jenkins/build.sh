@@ -19,7 +19,7 @@ if [[ "$RPC_RELEASE" == "juno" ]]; then
 elif [[ "$RPC_RELEASE" == "kilo" ]]; then
     RPC_SERIES="11.1"
 elif [[ "$RPC_RELEASE" == "master" ]]; then
-    RPC_SERIES="11.1"
+    RPC_SERIES="12.0"
 else
     RPC_SERIES=`echo $RPC_RELEASE | sed 's/^r//g' | awk -F '[\.]' '{ print $1 "." $2 }'`
 fi
